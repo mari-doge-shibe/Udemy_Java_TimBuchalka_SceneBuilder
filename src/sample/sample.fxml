@@ -5,8 +5,10 @@
 
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="OK" />
-       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Help" GridPane.columnIndex="2" />                                         <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Cancel" GridPane.columnIndex="1" />
+       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="OK" GridPane.rowIndex="1" />
+       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Help" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="My Label" />
    </children>
    <columnConstraints>
       <ColumnConstraints />
@@ -14,6 +16,7 @@
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
+      <RowConstraints />
       <RowConstraints />
    </rowConstraints>
 </GridPane>
