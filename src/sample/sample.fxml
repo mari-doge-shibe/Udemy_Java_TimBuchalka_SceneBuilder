@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="OK" GridPane.rowIndex="1" />
-       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Help" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <HBox spacing="5.0" GridPane.rowIndex="1">
+         <children>
+             <Button mnemonicParsing="false" text="OK">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+             <Button mnemonicParsing="false" text="Cancel" />
+             <Button mnemonicParsing="false" text="Help" />
+         </children>
+         <GridPane.margin>
+            <Insets left="5.0" right="5.0" />
+         </GridPane.margin>
+      </HBox>
       <Label text="My Label" />
    </children>
    <columnConstraints>
@@ -16,6 +27,7 @@
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
+      <RowConstraints />
       <RowConstraints />
       <RowConstraints />
    </rowConstraints>
